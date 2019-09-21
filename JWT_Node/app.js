@@ -11,7 +11,7 @@ app.use(bodyParser.json({limit: '10mb', extended: true}));
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true}));
 
 const jwt = require('jsonwebtoken');
-let secret = 'localhost';
+let secret = 'some_secret';
 
 var expressJWT = require('express-jwt');
 app.use(expressJWT({ secret: secret})
